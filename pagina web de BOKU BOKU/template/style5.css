@@ -1,0 +1,168 @@
+/* NAVBAR */
+.navbar {
+    background-color: #0079b1;
+    overflow: hidden;
+  }
+  
+  .menu-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu-items li {
+    margin-right: 20px;
+  }
+  
+  .menu-items li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+  }
+  
+  /* GENERAL */
+  body {
+    font-family: sans-serif;
+    background-color: #0090D4;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+  }
+  
+  h1, p {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* LÍNEAS DECORATIVAS */
+  .side-line {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: white;
+    z-index: -1;
+  }
+  
+  .left-line {
+    left: 30px;
+  }
+  
+  .right-line {
+    right: 30px;
+  }
+  
+  .left-line::before, .right-line::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .left-line::before {
+    left: 10px;
+  }
+  
+  .right-line::before {
+    right: 10px;
+  }
+  
+  /* HEADER GENERAL */
+  .header {
+    background-color: #006391;
+    padding: 10px 0;
+  }
+  
+  .navbar .menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navbar .menu-items li {
+    display: inline-block;
+  }
+  
+  .navbar .menu-items li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+  .navbar .menu-items li a:hover {
+    background-color: #2d8fbd;
+    border-radius: 5px;
+  }
+  
+  /* TÍTULO SKINS */
+  .titulo-skins {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+  }
+  
+  .titulo-skins h1 {
+    font-size: 28px;
+    margin: 0;
+  }
+  
+  .flecha {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s;
+  }
+  
+  .flecha:hover {
+    transform: scale(1.2);
+  }
+  
+  /* CUADRÍCULA DE SKINS */
+  .skins-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+  
+  .skin-card {
+    background-color: #ffffff20;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  
+  .skin-card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .download-btn {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .download-btn:hover {
+    background-color: #c0eaff;
+  }

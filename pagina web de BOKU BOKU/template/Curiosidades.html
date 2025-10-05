@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOKU BOKU - Curiosidades</title>
+  <link rel="icon" href="images/Wikipedia BOKU.PNG" type="image/png"> 
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+  <!-- NAVBAR original -->
+  <header class="header">
+    <nav class="navbar">
+      <ul class="menu-items">
+        <li><a href="Noticias.html">Noticias</a></li>
+        <li><a href="Youtubers.html">Youtubers</a></li>
+        <li><a href="index.html">Regresar</a></li>
+        <li><a href="Sobre.html">Sobre el juego</a></li>
+        <li><a href="skins.html">Skins</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- PRIMER CUADRO -->
+<div class="cuadro-expandible">
+    <button class="toggle-button" onclick="toggleTexto('texto1')">
+      ¿Cuál fue el motivo para crear BOKU BOKU?
+    </button>
+    <div id="texto1" class="texto-oculto">
+      <div class="contenido-texto">
+        <p><strong>BOKU BOKU</strong> fue creado por Kin Fung Leung como un proyecto personal inspirado en su infancia.</p>
+        <p>Buscaba un juego donde pudieras construir libremente sin misiones ni presión, solo imaginación.</p>
+      </div>
+    </div>
+  </div>
+  
+ <!-- SEGUNDO CUADRO -->
+<div class="cuadro-expandible">
+    <button class="toggle-button" onclick="toggleTexto('texto2')">
+       ¿Cómo se cambian los colores de texto en BOKU BOKU?
+    </button>
+    <div id="texto2" class="texto-oculto">
+      <div class="contenido-texto">
+        <p>En BOKU BOKU puedes cambiar el color del texto usando códigos hexadecimales antes de las palabras.</p>
+        <p><strong>Ejemplo:</strong> <code>[00ff00]Hola</code> se mostrará como <span style="color:#00ff00;">Hola</span></p>
+        <p>Funciona con muchos códigos, como <code>[ff0000]</code> (rojo), <code>[0000ff]</code> (azul), etc.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- TERCER CUADRO -->
+<div class="cuadro-expandible">
+    <button class="toggle-button" onclick="toggleTexto('texto4')">
+      ¿Existen bloques únicos en BOKU BOKU?
+    </button>
+    <div id="texto4" class="texto-oculto">
+      <div class="contenido-texto">
+        <p>Sí, en <strong>BOKU BOKU</strong> existen bloques especiales que solo aparecen si los colocas, los recoges y luego los colocas encima de otros bloques.</p>
+        <p>Este comportamiento hace que ciertos bloques se transformen o tomen una forma distinta, lo que permite descubrir combinaciones ocultas.</p>
+      </div>
+    </div>
+  </div>
+    
+  
+  <script>
+    function toggleTexto(id) {
+      const contenido = document.getElementById(id);
+      contenido.classList.toggle("mostrar");
+    }
+  </script>
+  
+  <!-- LÍNEAS DECORATIVAS -->
+  <div class="side-line left-line"></div>
+  <div class="side-line right-line"></div>
+
+</body>
+</html>

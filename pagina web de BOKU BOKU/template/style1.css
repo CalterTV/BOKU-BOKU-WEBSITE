@@ -1,0 +1,187 @@
+/* Estilos para el menú de navegación */
+.navbar {
+    background-color: #0079b1;
+    overflow: hidden;
+}
+
+.menu-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu-items li {
+    margin-right: 20px;
+}
+
+.menu-items li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    background-color: #0796d8;
+    margin: 0;
+    padding: 0;
+}
+
+h1, p {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para las líneas laterales */
+.side-line {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: white;
+    z-index: -1; /* Asegura que esté detrás de las imágenes y el contenido */
+}
+
+/* Líneas en los lados izquierdo y derecho */
+.left-line {
+    left: 30px; /* Ajusta la separación desde la izquierda */
+}
+
+.right-line {
+    right: 30px; /* Ajusta la separación desde la derecha */
+}
+
+/* Segunda línea a 10px de la primera en cada lado */
+.left-line::before, .right-line::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+}
+
+.left-line::before {
+    left: 10px;
+}
+
+.right-line::before {
+    right: 10px;
+}
+
+/* Estilos para el bloque de noticias */
+.news-item {
+    background-color: #0171a5;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.news-date {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.news-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.news-description {
+    margin: 20px 0 0; /* Espacio superior entre la imagen y el párrafo, elimina márgenes inferiores */
+    font-size: 16px; /* Tamaño de texto legible */
+    color: #e2e2e2; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    text-align: justify; /* Justifica el texto */
+    padding: 0 20px; /* Espaciado interno a los lados para mantener margen respecto a los bordes */
+}
+
+/* Contenedor para las imágenes relacionadas */
+.news-related {
+    display: flex; /* Disposición horizontal */
+    justify-content: space-around; /* Espaciado uniforme */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.related-box img {
+    width: 180px;
+    height: 120px; /* Alto fijo */
+    object-fit: cover; /* Ajusta la imagen al cuadro sin deformarla */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    margin: 0 10px;
+}
+
+
+.related-box img:hover {
+    box-shadow: 0 6px 12px rgb(255, 255, 255); /* Sombra más intensa al pasar el ratón */
+}
+
+/* Sombra para las imágenes pequeñas */
+.related-box img {
+    width: 250px; /* Ajusta el tamaño deseado */
+    height: 150px; /* Mantiene la proporción */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra de luz */
+    transition: box-shadow 0.3s ease; /* Transición suave */
+    margin: 0 10px; /* Espacio horizontal entre imágenes */
+}
+
+/* Cambia la sombra al pasar el ratón sobre la imagen */
+.related-box img:hover {
+    box-shadow: 0 6px 12px rgb(255, 255, 255); /* Sombra más intensa al pasar el ratón */
+}
+
+.news-image {
+    margin: 20px; /* Margen alrededor del contenedor de la imagen grande */
+}
+
+.news-image img {
+    width: 100%; /* Ajusta el ancho al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+ /* Estilos para el menú de navegación */
+ .header {
+    background-color: #006391;
+    padding: 10px 0;
+}
+
+.navbar .menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu-items li {
+    display: inline-block;
+}
+
+.navbar .menu-items li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.navbar .menu-items li a:hover {
+    background-color: #2d8fbd;
+    border-radius: 5px;
+}
+
+.dorado {
+    color: #FFD700; /* Color dorado */
+    font-style: italic; /* Opcional, si deseas un estilo en cursiva */
+}
+
