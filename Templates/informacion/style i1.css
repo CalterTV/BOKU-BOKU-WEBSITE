@@ -1,0 +1,232 @@
+body {
+    background-color: #0090D4; /* Color de fondo azul claro */
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Estilos para el menú de navegación */
+.navbar {
+    background-color: #0079b1;
+    overflow: hidden;
+    position: relative; /* Para asegurar el contexto de apilamiento */
+    z-index: 10; /* Asegurarse de que esté sobre las líneas */
+}
+
+.menu-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu-items li {
+    margin-right: 20px;
+}
+
+.menu-items li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+  /* Estilos para el menú de navegación */
+  .header {
+    background-color: #006391;
+    padding: 10px 0;
+}
+
+/* Estilos generales para la cabecera */
+.header-content {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.general.container {
+    margin: 20px;
+    color: white;
+}
+
+.general-1.txt {
+    text-align: center; /* Esto ya está en tu código */
+    color: white;
+    display: flex; /* Usa flexbox para alinear el contenido */
+    flex-direction: column;
+    align-items: center;
+}
+
+.general-1.txt img {
+    width: 1500%; /* Asegúrate de que la imagen use el 100% del ancho disponible */
+    max-width: 1262px; /* Cambia este valor al tamaño máximo que deseas */
+    height: 631; /* Mantiene la proporción de la imagen */
+    border-radius: 0px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Asegúrate de que no haya margen adicional */
+}
+
+.general-2.txt img {
+    width: 100%; /* Igual para esta imagen */
+    max-width: 800px; /* Ajusta según necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+ /* Estilos para el menú de navegación */
+ .header {
+    background-color: #006391;
+    padding: 10px 0;
+}
+
+.navbar .menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu-items li {
+    display: inline-block;
+}
+
+.navbar .menu-items li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.navbar .menu-items li a:hover {
+    background-color: #2d8fbd;
+    border-radius: 5px;
+}
+
+/* Estilos para las líneas laterales */
+.side-line {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: white;
+    z-index: -1; /* Asegura que esté detrás de las imágenes y el contenido */
+}
+
+/* Líneas en los lados izquierdo y derecho */
+.left-line {
+    left: 30px; /* Ajusta la separación desde la izquierda */
+}
+
+.right-line {
+    right: 30px; /* Ajusta la separación desde la derecha */
+}
+
+/* Segunda línea a 10px de la primera en cada lado */
+.left-line::before, .right-line::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+}
+
+.left-line::before {
+    left: 10px;
+}
+
+.right-line::before {
+    right: 10px;
+}
+
+.youtuber-card {
+    position: absolute;
+    top: 50%;
+    right: 70px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0079b1;
+    border: 2px solid #006c9e;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    width: 350px;
+}
+
+.youtuber-name, .youtuber-image, .youtuber-info {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.youtuber-name {
+    border-bottom: 1px solid #004d70; /* Línea entre nombre y demás */
+}
+
+.youtuber-image {
+    border-bottom: 1px solid #004d70; /* Línea entre imagen y demás */
+}
+
+.youtuber-info p {
+    border-bottom: 1px solid #004d70; /* Línea entre imagen y demás */
+}
+
+.youtuber-info {
+    padding: 20px 0;
+}
+
+.youtuber-name h2 {
+    color: white;
+    font-size: 18px;
+}
+
+.youtuber-image img {
+    border-radius: 5%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.youtuber-info p {
+    font-size: 20px;
+    color: white;
+    margin: 10px 0;
+}
+
+.title-box, h1, p {
+    color: white;
+    margin-left: 50px;  /* Ajusta este valor según lo que necesites */
+}
+
+/* Estilo para el rectángulo detrás del botón */
+.button-container {
+    position: relative;
+    margin-top: 10px;
+}
+
+.background-rectangle {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 120px;
+    height: 40px;
+    background-color: #006391;
+    border-radius: 5px;
+    z-index: 1; /* Rectángulo detrás */
+}
+
+/* Estilo para el botón */
+.action-button {
+    position: relative;
+    top: 1px;
+    left: 55px;
+    z-index: 2; /* Botón encima */
+    color: white;
+    background-color: #0079b1;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}

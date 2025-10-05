@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOKU BOKU - WIKI - Noticias</title>
+    <link rel="icon" href="./images/Wikipedia BOKU.PNG" type="image/png"> 
+    <link rel="stylesheet" href="style1.css"> <!-- Enlace a la hoja de estilo CSS -->
+
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <ul class="menu-items">
+            <li><a href="index.html">Regresar</a></li>
+            <li><a href="Youtubers.html">Youtubers</a></li>
+            <li><a href="Curiosidades.html">Curiosidades</a></li>
+            <li><a href="Sobre.html">Sobre el juego</a></li>
+            <li><a href="skins.html">Skins</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Líneas a los lados -->
+<div class="side-line left-line"></div>
+<div class="side-line right-line"></div>
+
+<main class="news-item">
+    <div class="news-date" id="news-date">
+        FECHA
+    </div>
+    
+    <div class="news-title" id="news-title">
+        NOTICIA: CONTENIDO 1
+    </div>
+    
+    <div class="news-image">
+        <img id="main-image" src="images/Noticia.jpg" alt="Imagen principal de la noticia">
+    </div>
+
+    <div class="news-description" id="news-description">
+              TEXTO
+    </div>
+    
+    <!-- Créditos -->
+    <div class="news-credit" id="news-credit">
+        <em class="dorado"></em>
+    </div>
+
+    <!-- Cuatro imágenes pequeñas relacionadas -->
+    <div class="news-related">
+        <div class="related-box">
+            <img src="images/Noticia.jpg" alt="Noticia relacionada 1" onclick="swapContent(this, 'FECHA', 'NOTICIA: CONTENIDO 2 ', 'TEXTO', '')">
+        </div>
+        <div class="related-box">
+            <img src="images/Noticia.jpg" alt="Noticia relacionada 2" onclick="swapContent(this, 'FECHA', 'NOTICIA:CONTENIDO 3 ', 'TEXTO', '')">
+        </div>
+        <div class="related-box">
+            <img src="images/Noticia.jpg" alt="Noticia relacionada 3" onclick="swapContent(this, 'FECHA', 'NOTICIA:CONTENIDO 4 ', 'TEXTO', '')">
+        </div>
+    </div>
+</main>
+
+<script>
+function swapContent(smallImg, newDate, newTitle, newDescription, newCredit) {
+    // Guardar el contenido de la imagen grande
+    const mainImage = document.getElementById("main-image");
+    const mainDate = document.getElementById("news-date").innerText;
+    const mainTitle = document.getElementById("news-title").innerText;
+    const mainDescription = document.getElementById("news-description").innerText;
+    const mainSrc = mainImage.src;
+    const mainCredit = document.getElementById("news-credit").innerText;  // Guardar los créditos
+
+    // Intercambiar contenido de la imagen grande con la imagen pequeña seleccionada
+    mainImage.src = smallImg.src;
+    document.getElementById("news-date").innerText = newDate;
+    document.getElementById("news-title").innerText = newTitle;
+    document.getElementById("news-description").innerText = newDescription;
+
+    // Actualizar los créditos
+    document.getElementById("news-credit").innerHTML = `<em class="dorado">${newCredit}</em>`;  // Cambiar los créditos
+
+    // Colocar el contenido de la imagen grande anterior en la imagen pequeña
+    smallImg.src = mainSrc;
+    smallImg.setAttribute("onclick", `swapContent(this, '${mainDate}', '${mainTitle}', '${mainDescription}', '${mainCredit}')`);
+
+}
+</script>
+</body>
+</html>
